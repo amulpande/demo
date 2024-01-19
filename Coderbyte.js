@@ -1,5 +1,5 @@
 //Q1 reverse string
-
+// solutins 
 // let name = 'hello'
 
 // function reverseStr(str){
