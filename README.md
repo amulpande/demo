@@ -3,6 +3,16 @@ This is for practice
 
 update made on main branch
 
+## 1st revert
+attempted revert
+
+## 2nd revert
+attempted 2nd time
+
+## 3rd revert
+attempted 3rd timew
+=======
+
 ## Repositry purpose
 this will be a change that conflict 
 with whatever is one the remote side
@@ -21,3 +31,4 @@ To get started here
 
 ## this will be used as reverts
 for revert this has been added
+
