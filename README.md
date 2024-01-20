@@ -11,6 +11,8 @@ attempted 2nd time
 
 ## 3rd revert
 attempted 3rd timew
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 
 ## Repositry purpose
@@ -31,4 +33,5 @@ To get started here
 
 ## this will be used as reverts
 for revert this has been added
+
 
