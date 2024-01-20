@@ -208,4 +208,43 @@
 
 //              command line
 
-// function commandLine()
+// function commandLine(str){
+//     str = str.split('=')
+//     let left = [str[0]]
+//     let right =[]
+    
+//     for(let i = 1; i<str.length-1; i++){
+//         part = str[i].split(' ')
+//         left.push(part[part.length-1])
+//         right.push(part.slice(0,part.length-1).join(' '))
+
+//     }
+//     right.push(str[str.length-1])
+//     let newstr=''
+//     for(let i=0; i<left.length; i++){
+//         newstr += left[i].length + '=' + right[i].length +' '
+//     }
+//     // return left
+//     return newstr.slice(0, newstr.length-1)
+
+// }
+// console.log(commandLine('letters=A B Z T numbers=1 2 26 20 combine=true'))
+
+//              Constant count
+
+
+// function constantCount(str){
+//     let regex = /[aeiouAEIOU]/
+//     let count = 0
+//     for(let i=0; i<str.length; i++){
+//         if(!(str.charAt(i).match(regex))){
+//             count ++
+//         }if(str.charAt(i)==' '){
+//             count --
+//         }
+//     }
+//     return count
+// }
+// console.log(constantCount('Hello World'))
+// console.log(constantCount('Alphabets'))
+
