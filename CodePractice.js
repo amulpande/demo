@@ -248,3 +248,15 @@
 // console.log(constantCount('Hello World'))
 // console.log(constantCount('Alphabets'))
 
+function arrayRotation(arr){
+    firstIndex = arr[0]
+    let newArr = []
+    for(let i=firstIndex ; i<arr.length; i++){
+        newArr.push(arr[i])
+    }
+    for(let i=0; i<firstIndex; i++){
+        newArr.push(arr[i])
+    }
+    return newArr
+}
+console.log(arrayRotation([4,1,2,3,4,5]))
