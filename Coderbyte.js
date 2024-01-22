@@ -56,23 +56,23 @@
 // console.log('working')
 
 // Array rotation 
-// function arrayRotaion(num){
+function arrayRotaion(num){
 
-//     let startIndex = num[0]
-//     let arrayRotation=[]
-//     for(let i=startIndex;i<num.length;i++){
-//         arrayRotation.push(num[i])
-//     }
+    let startIndex = num[0]
+    let arrayRotation=[]
+    for(let i=startIndex;i<num.length;i++){
+        arrayRotation.push(num[i])
+    }
 
-//     for(let i=0;i<startIndex;i++){
-//         arrayRotation.push(num[i])
-//     }
+    for(let i=0;i<startIndex;i++){
+        arrayRotation.push(num[i])
+    }
 
-//     return arrayRotation
+    return arrayRotation
 
-// }
+}
 
-// console.log(arrayRotaion([4,3,4,3,1,2] ))
+console.log(arrayRotaion([4,3,4,3,1,2] ))
 
 // binary converter coderbyte
 
