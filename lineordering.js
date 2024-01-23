@@ -82,7 +82,67 @@ function permute(arr) {
     }
     return results;
 }
+/*
+function lineOrdering(strArr) {
+  // Helper function to generate all permutations of an array
+  function generatePermutations(arr) {
+    if (arr.length === 1) {
+      return [arr];
+    }
 
+    const permutations = [];
+    for (let i = 0; i < arr.length; i++) {
+      const remaining = [...arr.slice(0, i), ...arr.slice(i + 1)];
+      const current = arr[i];
+      const subPermutations = generatePermutations(remaining);
+      for (const perm of subPermutations) {
+        permutations.push([current, ...perm]);
+      }
+    }
+
+    return permutations;
+  }
+
+  // Helper function to check if a permutation satisfies the relations
+  function isValidPermutation(permutation) {
+    for (const relation of strArr) {
+      const [first, second] = relation.split(/[<>]/);
+      const firstIndex = permutation.indexOf(first);
+      const secondIndex = permutation.indexOf(second);
+
+      if (relation.includes('>')) {
+        if (firstIndex >= secondIndex) {
+          return false;
+        }
+      } else if (relation.includes('<')) {
+        if (firstIndex <= secondIndex) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  // Get all possible permutations of the people
+  const people = [...new Set(strArr.join('').match(/[A-Z]/g))];
+  const permutations = generatePermutations(people);
+
+  // Count valid permutations
+  let count = 0;
+  for (const permutation of permutations) {
+    if (isValidPermutation(permutation)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+// Example usage:
+const result = lineOrdering(["J>B","B<S","D>J"]);
+console.log(result); // Output: 3
+
+*/
 
 console.log(lineOrdering(['A>B', 'A<C', 'C<Z']))
 console.log(lineOrdering(['A>B', 'B<R', 'R<G']))
