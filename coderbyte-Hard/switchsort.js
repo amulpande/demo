@@ -5,6 +5,27 @@
 // Function returns the 
 // minimum number of swaps 
 // required to sort the array 
+
+// function switchSort(arr){
+//     let swap = 0;
+//     let visited = new Array(arr.length).fill(false)
+//     for(let i=0; i<arr.length; i++){
+//         let j=i
+//         let count = 0
+//         while(!visited[j]){
+//             visited[j] = true
+//             j = arr[j]-1
+//             count += 1
+//         }
+//         if(count !=0){
+//             swap = swap + (count - 1)
+//         }
+//     }
+//     return swap
+// }
+// console.log(switchSort([1,5,4,3,2]))
+// console.log(switchSort([3,1,2]))
+// console.log(switchSort([3,1,4,2]))
 function minSwaps(arr) 
 { 
     let n = arr.length; 
