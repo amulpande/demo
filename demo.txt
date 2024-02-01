@@ -2,3 +2,17 @@ hello
 this is demo txt
 some changes for stash
 practice for stash
+
+// Memozitation
+// let cache={};
+// function memoZitation(){
+//     return function(n){
+//         if(n in cache){
+//             return cache[n]
+//         }else{
+//             console.log(`Long time`);
+//             cache[n]=n+80
+//             return cache[n]
+//         }
+//     }
+// }
