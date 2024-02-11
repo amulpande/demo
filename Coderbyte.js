@@ -357,47 +357,47 @@ console.log(arrayRotaion([4,3,4,3,1,2] ))
 // console.log(commandLine(letters))
 
 
-//       letter Changed
-// function letterChanges(str){
-//    str = str.toLowerCase()
-//    let newArr = []
+    //   letter Changed
+function letterChanges(str){
+   str = str.toLowerCase()
+   let newArr = []
 
-//    let newStr=''
+   let newStr=''
 
 
-//    let regex = /[a-z]/g
-//    //let arr = str.split('')
-//    for(let i = 0; i<str.length; i++){
-//       if(str[i].match(/[a-z]/)){
-//          let charCode = str[i].charCodeAt(0)+1
-//          newArr.push(charCode)
-//       }else{
-//          newArr.push(str[i])
-//       }
-//    }
-//    for(let i = 0; i<newArr.length; i++){
-//       if(newArr[i]>90){
-//          newStr +=String.fromCharCode(newArr[i])
-//       }else{
-//          newStr += newArr[i]
-//       }
-//    }
-//    let newnewStr = ''
-//    for(let i = 0; i<newStr.length; i++){
-//       if(newStr[i].match(/[aeiou]/)){
-//          newnewStr += newStr[i].toUpperCase()
-//       }else{
-//          newnewStr +=newStr[i]
-//       }
-//    }
-//    return newnewStr
-// }
-// // let a = 'a'
-// // let b = a.charCodeAt(0)+4
-// // console.log(String.fromCharCode(b))
-// // let input = "hello*3"
-// let input = "fun times!"
-// console.log(letterChanges(input))
+   let regex = /[a-z]/g
+   //let arr = str.split('')
+   for(let i = 0; i<str.length; i++){
+      if(str[i].match(/[a-z]/)){
+         let charCode = str[i].charCodeAt(0)+1
+         newArr.push(charCode)
+      }else{
+         newArr.push(str[i])
+      }
+   }
+   for(let i = 0; i<newArr.length; i++){
+      if(newArr[i]>90){
+         newStr +=String.fromCharCode(newArr[i])
+      }else{
+         newStr += newArr[i]
+      }
+   }
+   let newnewStr = ''
+   for(let i = 0; i<newStr.length; i++){
+      if(newStr[i].match(/[aeiou]/)){
+         newnewStr += newStr[i].toUpperCase()
+      }else{
+         newnewStr +=newStr[i]
+      }
+   }
+   return newnewStr
+}
+// let a = 'a'
+// let b = a.charCodeAt(0)+4
+// console.log(String.fromCharCode(b))
+// let input = "hello*3"
+let input = "fun times!"
+console.log(letterChanges(input))
 
 // function letterCapitalized(str){
 //    str = str.split(' ')
