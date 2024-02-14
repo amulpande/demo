@@ -1,3 +1,6 @@
+# Practice
+This repo is only for github prcatice and posting some of my practice code
+
 # demo
 This is for practice
 
